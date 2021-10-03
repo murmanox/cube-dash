@@ -1,7 +1,7 @@
 import { Dependency, Flamework, OnRender, OnStart } from "@flamework/core"
 import { Component, BaseComponent, Components } from "@flamework/components"
 import { TweenService, UserInputService, Workspace } from "@rbxts/services"
-import { v3 } from "shared/utility/signal/vector3-utils"
+import { v3 } from "shared/utility/vector3-utils"
 import { HazardController } from "client/controllers/hazard-controller"
 import { GameController } from "client/controllers/game-controller"
 import { Hazard } from "./hazard-component"
