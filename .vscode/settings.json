@@ -1,0 +1,36 @@
+{
+		
+	"editor.fontFamily": "Fira Code, Consolas, 'Courier New', monospace, Fira Code",
+	"editor.fontLigatures": true,
+	"editor.fontSize": 13,
+	"files.trimTrailingWhitespace": false,
+	"files.trimFinalNewlines": true,
+
+	"workbench.editor.closeEmptyGroups": false,
+
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"node_modules/[^@]*": true,
+		"node_modules/@[^r]*": true,
+		"**.{rbxl,rbxl.lock}": true,
+		"include/**": true,
+		"out/**": true,
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"editor.formatOnSave": true
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+		"editor.formatOnSave": true
+	},
+	"eslint.run": "onType",
+	"eslint.format.enable": true,
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"editor.snippetSuggestions": "bottom",
+	"editor.suggestSelection": "first",
+}
