@@ -23,7 +23,7 @@
     "prettier": "^2.3.2",
     "rbxts-transformer-flamework": "github:rbxts-flamework/transformer#master",
     "roblox-ts": "^1.2.3",
-    "typescript": "^4.3.5"
+    "typescript": "4.3.5"
   },
   "dependencies": {
     "@flamework/components": "^1.0.0-beta.4",
@@ -32,6 +32,7 @@
     "@rbxts/profileservice": "^1.4.0",
     "@rbxts/roact": "^1.4.0-ts.2",
     "@rbxts/roact-hooks": "^0.3.0-ts.0",
-    "@rbxts/services": "^1.2.0"
+    "@rbxts/services": "^1.2.0",
+    "@rbxts/t": "^2.1.5"
   }
 }
