@@ -8,14 +8,14 @@ interface ReplicatedFirst extends Instance {
 			Music4: Sound;
 		};
 	};
-	Hazard: Part;
 	Player: Part & {
 		ConstrainZ: BodyPosition;
 		Face: Decal;
-		AngularVelocity: AngularVelocity;
 		Attachment: Attachment & {
 			ParticleEmitter: ParticleEmitter;
 		};
 	};
 	LocalScript: LocalScript;
+	Hazard: Part;
+	Debris: Part;
 }

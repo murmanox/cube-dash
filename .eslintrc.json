@@ -19,8 +19,16 @@
 		"plugin:prettier/recommended"
 	],
 	"rules": {
-		"prettier/prettier": "warn",
+		"prettier/prettier": ["warn",
+			{
+				"semi": false,
+				"endOfLine": "auto",
+				"useTabs": true,
+				"printWidth": 100
+			}
+		],
 		"prefer-const": "off",
-		"no-autofix/prefer-const": "warn"
+		"no-autofix/prefer-const": "warn",
+		"roblox-ts/lua-truthiness": "off"
 	}
 }

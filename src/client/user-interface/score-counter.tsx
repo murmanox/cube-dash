@@ -1,17 +1,17 @@
 import Roact from "@rbxts/roact"
-import Hooks from "@rbxts/roact-hooks"
+import { hooked } from "@rbxts/roact-hooked"
 
 interface ScoreCounterProps {
 	score: Roact.Binding<number>
 	best: Roact.Binding<number>
 }
 
-export const context = Roact.createContext<{ Font: Enum.Font; TextColor3: Color3 }>({
-	Font: Enum.Font.FredokaOne,
-	TextColor3: new Color3(1, 1, 1),
-})
+// export const context = Roact.createContext<{ Font: Enum.Font; TextColor3: Color3 }>({
+// 	Font: Enum.Font.FredokaOne,
+// 	TextColor3: new Color3(1, 1, 1),
+// })
 
-const scoreCounter: Hooks.FC<ScoreCounterProps> = (props) => {
+const ScoreCounter = hooked<ScoreCounterProps>((props) => {
 	return (
 		<frame
 			AnchorPoint={new Vector2(0.5, 0)}
@@ -49,8 +49,6 @@ const scoreCounter: Hooks.FC<ScoreCounterProps> = (props) => {
 			</textlabel>
 		</frame>
 	)
-}
-
-export const ScoreCounter = new Hooks(Roact)(scoreCounter, {
-	name: "score_counter",
 })
+
+export = ScoreCounter

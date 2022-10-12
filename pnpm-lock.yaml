@@ -5,6 +5,7 @@ specifiers:
   '@flamework/core': ^1.0.0-beta.1
   '@flamework/networking': ^1.0.0-beta.5
   '@rbxts/compiler-types': ^1.2.3-types.0
+  '@rbxts/maid': ^1.0.0-ts.1
   '@rbxts/profileservice': ^1.4.0
   '@rbxts/roact': ^1.4.0-ts.2
   '@rbxts/roact-hooks': ^0.3.0-ts.0
@@ -27,6 +28,7 @@ dependencies:
   '@flamework/components': 1.0.0-beta.4_@rbxts+types@1.0.535
   '@flamework/core': 1.0.0-beta.1_@rbxts+types@1.0.535
   '@flamework/networking': 1.0.0-beta.5_@rbxts+types@1.0.535
+  '@rbxts/maid': 1.0.0-ts.1
   '@rbxts/profileservice': 1.4.0
   '@rbxts/roact': 1.4.0-ts.2
   '@rbxts/roact-hooks': 0.3.0-ts.1
@@ -44,7 +46,7 @@ devDependencies:
   eslint-plugin-prettier: 3.4.1_6e975bd57c7acf028c1a9ddbbf60c898
   eslint-plugin-roblox-ts: 0.0.30_eslint@7.32.0
   prettier: 2.4.1
-  rbxts-transformer-flamework: github.com/rbxts-flamework/transformer/f8e88d43539f33e74e84d54f996e12b63df3cbb9
+  rbxts-transformer-flamework: github.com/rbxts-flamework/transformer/fda31c43b2dd12dc0f4c4814351104da93d4e57f
   roblox-ts: 1.2.3
   typescript: 4.3.5
 
@@ -217,15 +219,15 @@ packages:
   /@types/md5/2.3.1:
     resolution: {integrity: sha512-OK3oe+ALIoPSo262lnhAYwpqFNXbiwH2a+0+Z5YBnkQEwWD8fk5+PIeRhYA48PzvX9I4SGNpWy+9bLj8qz92RQ==}
     dependencies:
-      '@types/node': 16.10.2
+      '@types/node': 16.10.3
     dev: true
 
   /@types/node/14.17.20:
     resolution: {integrity: sha512-gI5Sl30tmhXsqkNvopFydP7ASc4c2cLfGNQrVKN3X90ADFWFsPEsotm/8JHSUJQKTHbwowAHtcJPeyVhtKv0TQ==}
     dev: true
 
-  /@types/node/16.10.2:
-    resolution: {integrity: sha512-zCclL4/rx+W5SQTzFs9wyvvyCwoK9QtBpratqz2IYJ3O8Umrn0m3nsTv0wQBk9sRGpvUe9CwPDrQFB10f1FIjQ==}
+  /@types/node/16.10.3:
+    resolution: {integrity: sha512-ho3Ruq+fFnBrZhUYI46n/bV2GjwzSkwuT4dTf0GkuNFmnb8nq4ny2z9JEVemFi6bdEJanHLlYfy9c6FN9B9McQ==}
     dev: true
 
   /@types/uuid/8.3.1:
@@ -1490,7 +1492,7 @@ packages:
       typescript: 4.4.3
     dev: true
 
-  /ttypescript/1.5.12_typescript@4.3.5:
+  /ttypescript/1.5.12_typescript@4.4.3:
     resolution: {integrity: sha512-1ojRyJvpnmgN9kIHmUnQPlEV1gq+VVsxVYjk/NfvMlHSmYxjK5hEvOOU2MQASrbekTUiUM7pR/nXeCc8bzvMOQ==}
     hasBin: true
     peerDependencies:
@@ -1498,7 +1500,7 @@ packages:
       typescript: '>=3.2.2'
     dependencies:
       resolve: 1.20.0
-      typescript: 4.3.5
+      typescript: 4.4.3
     dev: true
 
   /type-check/0.4.0:
@@ -1603,8 +1605,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/rbxts-flamework/transformer/f8e88d43539f33e74e84d54f996e12b63df3cbb9:
-    resolution: {tarball: https://codeload.github.com/rbxts-flamework/transformer/tar.gz/f8e88d43539f33e74e84d54f996e12b63df3cbb9}
+  github.com/rbxts-flamework/transformer/fda31c43b2dd12dc0f4c4814351104da93d4e57f:
+    resolution: {tarball: https://codeload.github.com/rbxts-flamework/transformer/tar.gz/fda31c43b2dd12dc0f4c4814351104da93d4e57f}
     name: rbxts-transformer-flamework
     version: 1.0.0-beta.7
     prepare: true
@@ -1624,8 +1626,8 @@ packages:
       md5: 2.3.0
       reflect-metadata: 0.1.13
       ts-expose-internals: 4.4.3
-      ttypescript: 1.5.12_typescript@4.3.5
-      typescript: 4.3.5
+      ttypescript: 1.5.12_typescript@4.4.3
+      typescript: 4.4.3
       uuid: 8.3.2
     transitivePeerDependencies:
       - ts-node

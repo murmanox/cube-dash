@@ -4,9 +4,7 @@ interface Workspace extends Model {
 			Texture: Texture;
 		};
 	};
-	Camera: Camera;
-	["Roblox Statue"]: Model;
-	Hazards: Folder;
+	Debris: Folder;
 	Water: Model & {
 		Water3: MeshPart;
 		Foam: MeshPart & {
@@ -20,6 +18,10 @@ interface Workspace extends Model {
 		Water2: MeshPart;
 		Water4: MeshPart;
 	};
+	["Roblox Statue"]: Model;
+	CameraPart: Part;
+	Hazards: Folder;
+	Camera: Camera;
 	Background: Folder & {
 		Trees: Folder;
 		Frog: Model & {
@@ -43,6 +45,7 @@ interface Workspace extends Model {
 		};
 	};
 	PlayArea: Folder & {
+		HazardArea: Part;
 		Decoration: Folder & {
 			Fences: Folder;
 			["Meshes/Grass"]: MeshPart;
@@ -56,7 +59,7 @@ interface Workspace extends Model {
 				Texture: Texture;
 			};
 		};
-		HazardArea: Part;
+		Spawn: Part;
 	};
 	Rocks: Folder;
 }

@@ -1,3 +1,5 @@
+import { flip } from "./random"
+
 export namespace Vector3Math {
 	export function rotateX(v: Vector3, rad: number, pivot: Vector3 = v3.zero) {
 		v = v.sub(pivot)
@@ -43,4 +45,21 @@ export namespace v3 {
 	export const forward = new Vector3(0, 0, 1)
 	export const back = new Vector3(0, 0, -1)
 	export const zero = new Vector3(0, 0, 0)
+
+	export function forEach(v: Vector3, callback: (axis: number) => number) {
+		return new Vector3(callback(v.X), callback(v.Y), callback(v.Z))
+	}
 }
+
+export function randomVector3(): Vector3 {
+	return new Vector3(flip(math.random()), flip(math.random()), flip(math.random())).Unit
+}
+
+function spread(vector: Vector3): [number, number, number]
+function spread(v: unknown): unknown {
+	if (typeIs(v, "Vector3")) {
+		return [v.X, v.Y, v.Z]
+	}
+}
+
+export const toTuple = spread

@@ -1,5 +1,7 @@
+import { Components } from "@flamework/components"
 import { Controller, OnInit, OnTick, Dependency } from "@flamework/core"
 import { CollectionService, Debris, ReplicatedFirst, Workspace } from "@rbxts/services"
+import { HazardComponent } from "client/components/hazard/hazard-component"
 import { GameController } from "./game-controller"
 
 const HAZARD_PREFAB = ReplicatedFirst.Hazard
@@ -11,6 +13,7 @@ export class HazardController implements OnInit, OnTick {
 	time = 0
 	spawn_time = 0.5
 	speed_multiplier = 1
+	hazard_counter = 0
 
 	public onInit() {
 		this.game.game_started.connect(() => {
@@ -55,9 +58,19 @@ export class HazardController implements OnInit, OnTick {
 	 */
 	private spawnHazard(position: Vector3) {
 		const hazard = HAZARD_PREFAB.Clone()
+
+		hazard.Name = "Hazard" + this.hazard_counter++
 		hazard.Position = position
 		hazard.Parent = Workspace.Hazards
 		CollectionService.AddTag(hazard, "hazard")
-		Debris.AddItem(hazard, 20)
+	}
+
+	/**
+	 * Destroys all active hazards
+	 */
+	public destroyHazards() {
+		Dependency(Components)
+			.getAllComponents<HazardComponent>()
+			.forEach((v) => v.explode())
 	}
 }

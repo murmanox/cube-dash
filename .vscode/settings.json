@@ -9,22 +9,24 @@
 	"workbench.editor.closeEmptyGroups": false,
 
 	"files.exclude": {
-		"**/.git": true,
-		"**/.svn": true,
-		"**/.hg": true,
-		"**/CVS": true,
-		"**/.DS_Store": true,
-		"node_modules/[^@]*": true,
-		"node_modules/@[^r]*": true,
-		"**.{rbxl,rbxl.lock}": true,
-		"include/**": true,
-		"out/**": true,
-	},
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "node_modules/[^@]*": true,
+    "node_modules/@[^r]*": true,
+    "**.{rbxl,rbxl.lock}": true,
+    "include/**": true,
+    "out/**": true
+  },
 	"[typescript]": {
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 		"editor.formatOnSave": true
 	},
 	"[typescriptreact]": {
+		// "editor.defaultFormatter": "esbenp.prettier-vscode",
 		"editor.defaultFormatter": "dbaeumer.vscode-eslint",
 		"editor.formatOnSave": true
 	},
@@ -33,4 +35,8 @@
 	"typescript.tsdk": "node_modules/typescript/lib",
 	"editor.snippetSuggestions": "bottom",
 	"editor.suggestSelection": "first",
+	"editor.codeActionsOnSave": [
+    "source.addMissingImports"
+  ],
+  "hide-files.files": []
 }

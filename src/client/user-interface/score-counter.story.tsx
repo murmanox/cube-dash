@@ -1,5 +1,5 @@
 import Roact from "@rbxts/roact"
-import { ScoreCounter } from "./score-counter"
+import ScoreCounter from "./score-counter"
 
 export = (story: GuiObject) => {
 	const [score, setScore] = Roact.createBinding(0)
